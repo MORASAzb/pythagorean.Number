@@ -12,6 +12,6 @@ if (!isNaN(input) && input >= 0) {
         }
     }
 } else {
-    console.log("Please enter a valid non-negative number.");
+    console.log("Please enter a real number.");
 }
 
