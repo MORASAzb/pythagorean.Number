@@ -1,14 +1,17 @@
-const numString = prompt("please enter a number : ");
-const num = parseInt(numString);
+const inputNumber =prompt("Enter a number:");
+const input=parseInt(input);
 
-if (!isNaN(num) && num >= 0) {
-    console.log("Pythagorean numbers up to the entered number : ");
-
-    for (let i = 0; i <= num; i++) {
-        const pythagoreanNumber = i **2;
-        console.log(pythagoreanNumber);
+if (!isNaN(input) && input >= 0) {
+    for (let a = 1; a <= input; a++) {
+        for (let b = a; b <= input; b++) {
+            for (let c = b; c <= input; c++) {
+                if (a * a + b * b === c * c) {
+                    console.log(`${a}, ${b}, ${c}`);
+                }
+            }
+        }
     }
 } else {
-    console.log("enter a real number !!!!!");
+    console.log("Please enter a valid non-negative number.");
 }
 
